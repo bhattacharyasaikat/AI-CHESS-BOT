@@ -528,10 +528,12 @@ if __name__ == "__main__":
         # Player 1 (Initially White in Game 1)
         engine1_path=stockfish_path,   # Path to engine OR None if Python
         engine1_python=False,          # True if Player 1 is your Python AI
+        engine1_config={"Skill Level": 15},
 
         # Player 2 (Initially Black in Game 1)
         engine2_path=your_ai_path,     # Path to engine OR None if Python
         engine2_python=True,           # True if Player 2 is your Python AI
+        engine2_config={"Skill Level": 15},
 
         # Battle Parameters
         time_limit=0.1,               # Time per move in seconds (adjust based on engine strength)
